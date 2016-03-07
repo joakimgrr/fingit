@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "Fingit",
+    "description": "Translates git terms to finnish",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }]
+}
